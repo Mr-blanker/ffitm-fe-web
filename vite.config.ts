@@ -13,8 +13,15 @@ function pathResolve(dir: string) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base:'/FeWeb/',
   alias: {
     "@": pathResolve("src"),
   },
-  plugins: [vue()]
+  plugins: [vue()],
+  server:{
+    proxy:{
+
+    }
+  },
+  clearScreen:false
 })

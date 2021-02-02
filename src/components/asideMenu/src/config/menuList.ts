@@ -27,7 +27,7 @@ const menuList:Array<MenuMap> = [
   {
     path:'/home/gitlab',
     title:'代码库',
-    icon:'el-icon-picture-outline-round',
+    icon:'el-icon-data-analysis',
     children:[]
   }
 ]
