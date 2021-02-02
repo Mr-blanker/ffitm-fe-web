@@ -1,0 +1,64 @@
+@import '../../../../assets//styles//common.scss';
+
+.sys-menu {
+  &__container {
+    width: 200px;
+    height: 100vh;
+    background: #555d63;
+    transition: $--all-transition;
+
+    .el-menu {
+      border-right: none;
+      transition: $--all-transition;
+
+      &-item {
+        height: 40px;
+        line-height: 40px;
+
+        i {
+          color: #fff;
+        }
+      }
+
+      &-item.is-active {
+        background: #409EFF !important;
+
+        .menu-title {
+          color: inherit !important;
+        }
+      }
+    }
+
+    .menu-title {
+      transition: $--all-transition;
+      color: #fff;
+    }
+
+  }
+
+  &__collapse {
+    width: 64px;
+
+    .menu-title {
+      display: inline-block;
+      height: 0;
+      width: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+
+  }
+
+
+  &__title {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 22px;
+    font-size: 16px;
+    color: #fff;
+    overflow: hidden;
+    word-break: break-all;
+    vertical-align: middle;
+  }
+
+}
